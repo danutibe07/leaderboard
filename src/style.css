@@ -1,9 +1,12 @@
+  @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-
+body{
+  font-family: 'Inter', sans-serif;
+}
 h1 {
   text-align: center;
   margin-top: 150px;
@@ -66,7 +69,7 @@ li:nth-child(even) {
 }
 
 .container div li {
-  width: 100%;
+  width: 99.9%;
   padding: 12px;
   outline: none;
   text-decoration: none;

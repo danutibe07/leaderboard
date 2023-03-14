@@ -1,15 +1,17 @@
 import './style.css';
-import getScores  from "./modules/getScores.js"
-import submitScore from "./modules/submitScores";
-//interface.js
+import getScores from './modules/getScores.js';
+import submitScore from './modules/submitScores.js';
+// interface.js
 class UserInterface {
     listScores = document.querySelector('#board');
+
     nameInput = document.getElementById('name');
+
     scoreInput = document.getElementById('score');
 
   clearInputs = () => {
-    nameInput.value = '';
-    scoreInput.value = '';
+    this.nameInput.value = '';
+    this.scoreInput.value = '';
   };
 
   renderScores = (array) => {
@@ -22,7 +24,7 @@ class UserInterface {
   };
 }
 
-  //index.js
+// index.js
 const submitButton = document.getElementById('submit');
 const refreshButton = document.getElementById('refresh');
 const nameInput = document.getElementById('name');
@@ -50,14 +52,3 @@ submitButton.addEventListener('click', async (e) => {
   await submitScore(nameInput.value, scoreInput.value);
   ui.clearInputs();
 });
-
-
-
-
-
-
-
-
-
-
-

@@ -2,27 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To Do List</title>
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <script src="https://kit.fontawesome.com/c0fd8031c3.js" defer crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Document</title>
 <script defer src="main.js"></script></head>
-    <body>
-        <main id="container">
-          <div class="heading">
-            <h1 class="headtag"></h1>
-            <i class="uil uil-sync refresh"></i>
-          </div>
-          <div class="inputControl">
-            <input type="text"
-              placeholder="Add to your list..."
-              class="task-input">
-            <i class="uil uil-enter enter"></i>
-          </div>
-          <ul class="content-container"></ul>
-          <button class="clearall"  id="clearall">
-          </button>
-        </main>
-        <script src="./index.js"></script>
-      </body>
+<body>
+    <main>
+        <h1>Leaderboard</h1>
+        <div class="container">
+            <div>
+                <div class="control">
+                    <h2 class="recentscores">Recent Scores</h2>
+                    <input type="button" value="Refresh" class="refresh" id="refresh">
+                </div>
+                <ul class="board" id="board"> 
+                
+                </ul>
+            </div>
+            <form>
+                <h3>Add your score</h3>
+                <input type="text" name="name" id="name" placeholder="your name">
+                <input type="number" name="score" id="score" placeholder="your score">
+                <input type="button" value="submit" id="submit">
+            </form>
+        </div>
+    </main>
+    <!-- <script type="module" src="./index.js"></script> -->
+</body>
 </html>
